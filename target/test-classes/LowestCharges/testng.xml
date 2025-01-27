@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests">
+	<listeners>
+		<listener class-name="LowestCharges.ExtentReportManager"></listener>
+	</listeners>
+	
+  <test name="chromeTest1">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+		<class name="LowestCharges.TC_1_Book_Cab"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="chromeTest2">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+		<class name="LowestCharges.TC_2_Gift_Card"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="chromeTest3">
+	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+		<class name="LowestCharges.TC_3_Hotel_Booking"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
