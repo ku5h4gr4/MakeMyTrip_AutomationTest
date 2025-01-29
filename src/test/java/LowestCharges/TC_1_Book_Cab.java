@@ -10,6 +10,7 @@ public class TC_1_Book_Cab extends Base {
 	String source = "Delhi";
 	String destination = "Manali";
 	
+	//LOCATORS
 	By cabs = By.xpath("//span[@class='headerIconTextAlignment chNavText darkGreyText'][normalize-space()='Cabs']");
 	By fromCity = By.xpath("//input[@id='fromCity']");
 	By toCity = By.xpath("//input[@placeholder='To']");
@@ -28,6 +29,7 @@ public class TC_1_Book_Cab extends Base {
 	By lowestPrice = By.xpath("//div[@id='List']//div[1]//div[1]//div[3]//div[1]//div[2]//div[1]//p[1]");
 	
 	
+	// LOWEST COST OF SUV CAB FROM DELHI TO MANALI
 	@Test(priority=1)
 	public void bookCab()
 	{			

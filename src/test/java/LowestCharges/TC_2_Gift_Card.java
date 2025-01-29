@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class TC_2_Gift_Card extends Base{
 	
+	// LOCATORS
 	By giftCard = By.xpath("//span[normalize-space()='Gift Cards']");
 	By chooseGiftcard = By.xpath("//div[@class='gc__right']//div[2]//ul[1]//li[1]//div[1]//img[1]");
 	By email = By.xpath("//span[normalize-space()='E-Mail']");
@@ -23,6 +24,7 @@ public class TC_2_Gift_Card extends Base{
 	By errorMsg = By.xpath("//p[@class='red-text font11 append-top5']");
 	
 	
+	// CHECK ERROR MESSAGE IN EMAIL SECTION OF GIFTCARD
 	@Test
 	public void gift_card() throws Exception
 	{

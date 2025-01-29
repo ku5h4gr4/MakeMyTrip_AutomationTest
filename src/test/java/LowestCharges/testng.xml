@@ -15,14 +15,14 @@
   <test name="chromeTest2">
 	<parameter name="browser" value="chrome"></parameter>
     <classes>
-		<class name="LowestCharges.TC_2_Gift_Card"/>
+	<class name="LowestCharges.TC_2_Gift_Card"/>
     </classes>
   </test> <!-- Test -->
   
   <test name="chromeTest3">
 	<parameter name="browser" value="chrome"></parameter>
     <classes>
-		<class name="LowestCharges.TC_3_Hotel_Booking"/>
+	<class name="LowestCharges.TC_3_Hotel_Booking"/>
     </classes>
   </test> <!-- Test -->
 

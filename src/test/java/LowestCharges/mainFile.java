@@ -8,11 +8,11 @@ public class mainFile {
 		TC_2_Gift_Card obj2 = new TC_2_Gift_Card();
 		TC_3_Hotel_Booking obj3 = new TC_3_Hotel_Booking();
 		obj3.DriverSetup("chrome");
-//		obj1.bookCab();
-		obj3.closePopup();
+		obj1.bookCab();
+		obj1.closePopup();
 //		obj2.gift_card();
-		obj3.hotel();
-//		obj3.closeApp();
+//		obj3.hotel();
+		obj1.closeApp();
 	}
 
 }

@@ -4,17 +4,30 @@
   <listeners>
     <listener class-name="LowestCharges.ExtentReportManager"/>
   </listeners>
-  <test thread-count="3" parallel="tests" name="chromeTest3(failed)">
+  <test thread-count="3" parallel="tests" name="chromeTest2(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="LowestCharges.TC_3_Hotel_Booking">
+      <class name="LowestCharges.TC_2_Gift_Card">
         <methods>
           <include name="closePopup"/>
           <include name="DriverSetup"/>
           <include name="closeApp"/>
-          <include name="hotel"/>
+          <include name="gift_card"/>
         </methods>
-      </class> <!-- LowestCharges.TC_3_Hotel_Booking -->
+      </class> <!-- LowestCharges.TC_2_Gift_Card -->
     </classes>
-  </test> <!-- chromeTest3(failed) -->
+  </test> <!-- chromeTest2(failed) -->
+  <test thread-count="3" parallel="tests" name="chromeTest1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="LowestCharges.TC_1_Book_Cab">
+        <methods>
+          <include name="bookCab"/>
+          <include name="closePopup"/>
+          <include name="DriverSetup"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- LowestCharges.TC_1_Book_Cab -->
+    </classes>
+  </test> <!-- chromeTest1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
