@@ -45,11 +45,10 @@ public class TC_1_Book_Cab extends Base {
 		act.moveToElement(destination_city).click().perform();
 		
 		driver.findElement(departureDate).click();
-		WebElement date = driver.findElement(date1);
-		js.executeScript("arguments[0].scrollIntoView();", date);
 		
 		WebElement day = wait.until(ExpectedConditions.elementToBeClickable(date2));
-		day.click();
+		js.executeScript("arguments[0].click()", day);
+		
 		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)");
 		
 		WebElement Time = wait.until(ExpectedConditions.elementToBeClickable(chooseTime));

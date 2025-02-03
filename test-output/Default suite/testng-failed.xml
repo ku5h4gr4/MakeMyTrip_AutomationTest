@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LowestCharges.TC_2_Gift_Card">
+      <class name="LowestCharges.TC_1_Book_Cab">
         <methods>
+          <include name="bookCab"/>
           <include name="closePopup"/>
           <include name="DriverSetup"/>
-          <include name="gift_card"/>
+          <include name="closeApp"/>
         </methods>
-      </class> <!-- LowestCharges.TC_2_Gift_Card -->
+      </class> <!-- LowestCharges.TC_1_Book_Cab -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
